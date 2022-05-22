@@ -75,3 +75,7 @@ Optional keyword arguments ('kwargs') in the 'TradingSystem' constructor allow t
 To allow the training process to be broken up into shorter chunks, saving and loading functionality was added to the 'TradingSystem' class. This included network weights, replay memories and recorded results (e.g. average rewards). The optional 'load model' kwarg is a Boolean that controls this behaviour. The MQ-Trader environments also have a 'load' kwarg that determines whether or not the environment creates the TP matrices from scratch or loads them from the 'data' directory. This reduces the set-up time when resuming training.
 
 The method 'train(num episode)' controls the interaction between the agents and the environment with a loop similar to that presented in the Environment section. The 'test()' method runs the environment in test mode rather than training mode. To do so, it switches the environment’s 'mode' attribute from 'train' to 'test'.
+
+### References
+
+Jae Won Lee, Jonghun Park, Jangmin O, Jongwoo Lee, and Euyseok Hong. A Multiagent Approach to Q-Learning for Daily Stock Trading. IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans, 37(6):864–877, 2007. doi: 10.1109/tsmca.2007.904825.
